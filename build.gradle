@@ -1,0 +1,28 @@
+group 'echo-server'
+version '1.0'
+
+apply plugin: 'groovy'
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+
+    compile 'commons-io:commons-io:2.4'
+
+    compile 'javax.servlet:javax.servlet-api:3.1.0'
+    compile 'org.eclipse.jetty:jetty-plus:9.2.5.v20141112'
+    compile 'org.eclipse.jetty:jetty-jsp:9.2.5.v20141112'
+    compile 'org.eclipse.jetty:jetty-jndi:9.2.5.v20141112'
+    compile 'org.eclipse.jetty:jetty-servlet:9.2.5.v20141112'
+    compile 'org.eclipse.jetty:jetty-server:9.2.5.v20141112'
+    compile 'org.eclipse.jetty:jetty-annotations:9.2.5.v20141112'
+
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
